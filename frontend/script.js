@@ -84,12 +84,61 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
+    // Sample data - hardcoded to avoid file loading issues
+    const sampleData = {
+        sample1: `Product Team Meeting - June 1, 2025
+
+Attendees: Sarah (PM), Mike (Design), Jen (Engineering), David (QA)
+
+Agenda:
+1. Product roadmap review
+2. Feature prioritization
+3. UI/UX improvements
+4. Release timeline
+
+Discussion:
+- Sarah presented Q3 roadmap with focus on mobile experience
+- Team agreed to prioritize checkout flow optimization for next sprint
+- Mike showed new dashboard mockups, received positive feedback
+- Jen raised concerns about API performance under load
+- David suggested implementing automated UI testing to catch regressions
+- Team decided to push back analytics feature to Q4
+- Next release scheduled for July 15
+
+Action Items:
+- Mike to finalize dashboard design by June 10
+- Jen to investigate API caching solutions by June 15
+- David to implement test automation framework by end of month
+- Sarah to update stakeholders on timeline changes by Friday`,
+        sample2: `Weekly Team Sync - May 28, 2025
+
+Present: Alex (Lead), Taylor, Jordan, Casey, Morgan
+
+Project Status:
+- Backend API is 80% complete
+- Frontend components library finished
+- QA environment setup pending
+
+Discussions:
+- Alex reported successful client demo yesterday
+- Taylor completed user authentication module ahead of schedule
+- Jordan facing issues with third-party payment integration
+- Team discussed switching to new cloud provider due to cost concerns
+- Decision made to adopt new testing framework
+- Casey will be on vacation next week
+
+Next Steps:
+- Morgan to help Jordan with payment integration issues
+- Taylor to document authentication module by Friday
+- All team members to complete cloud migration training by June 5
+- Alex to schedule follow-up client demo for June 10`
+    };
+
     // Sample data buttons
     sample1Btn.addEventListener('click', async () => {
         try {
             showLoader();
-            const response = await fetch('samples/sample1.txt');
-            const text = await response.text();
+            const text = sampleData.sample1;
             meetingText.value = text;
             
             // Switch to text tab
@@ -105,8 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sample2Btn.addEventListener('click', async () => {
         try {
             showLoader();
-            const response = await fetch('samples/sample2.txt');
-            const text = await response.text();
+            const text = sampleData.sample2;
             meetingText.value = text;
             
             // Switch to text tab
