@@ -1,4 +1,6 @@
 # AI-Powered Meeting Minutes Extractor
+<img width="712" alt="image" src="https://github.com/user-attachments/assets/3aea7f1d-db42-46ad-b86a-a7cdac3ce981" />
+
 
 A Node.js backend service integrated with Google's Gemini API that processes meeting notes to extract summaries, key decisions, and action items, returning structured JSON output.
 
