@@ -95,7 +95,6 @@ curl -X POST http://localhost:5000/api/process-meeting-file \
   -F "file=@/path/to/sample1.txt"
 ```
 
-### Using PowerShell
 ### Using Postman
 
 1. Create a new POST request to `http://localhost:5000/api/process-meeting`
