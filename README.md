@@ -157,4 +157,4 @@ The API handles various error scenarios:
 
 ## License
 
-MIT
+ISC
