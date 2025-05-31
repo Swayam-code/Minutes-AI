@@ -5,6 +5,8 @@
 A Node.js backend service integrated with Google's Gemini API that processes meeting notes to extract summaries, key decisions, and action items, returning structured JSON output.
 
 ## 📋 Overview
+<img width="371" alt="image" src="https://github.com/user-attachments/assets/c809612e-0d3e-4e6c-9f70-b95e4536007a" />
+
 
 This application accepts meeting notes (either as raw text or a .txt file) and uses Google's Gemini AI to extract:
 
@@ -51,10 +53,9 @@ This application accepts meeting notes (either as raw text or a .txt file) and u
    ```
 
 ## 🧪 Testing the API
-<img width="698" alt="image" src="https://github.com/user-attachments/assets/68dd768c-1cd4-4035-9f72-3d87f8ff64f1" />
-
 
 ### Using Postman
+<img width="698" alt="image" src="https://github.com/user-attachments/assets/68dd768c-1cd4-4035-9f72-3d87f8ff64f1" />
 
 #### Text Input Endpoint
 
@@ -83,6 +84,8 @@ This application accepts meeting notes (either as raw text or a .txt file) and u
 5. Send the request
 
 ### Using cURL
+<img width="698" alt="image" src="https://github.com/user-attachments/assets/f79423cd-85fd-41d2-bbcd-c9ffca154e68" />
+
 
 #### Text Input Endpoint
 
