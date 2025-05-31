@@ -49,6 +49,8 @@ This application accepts meeting notes (either as raw text or a .txt file) and u
    ```
 
 ## 🧪 Testing the API
+<img width="698" alt="image" src="https://github.com/user-attachments/assets/68dd768c-1cd4-4035-9f72-3d87f8ff64f1" />
+
 
 ### Using Postman
 
