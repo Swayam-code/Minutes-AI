@@ -84,8 +84,7 @@ This application accepts meeting notes (either as raw text or a .txt file) and u
 5. Send the request
 
 ### Using cURL
-<img width="698" alt="image" src="https://github.com/user-attachments/assets/f79423cd-85fd-41d2-bbcd-c9ffca154e68" />
-
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/d6e84a6e-f168-4099-a22e-97e908bf4026" />
 
 #### Text Input Endpoint
 
