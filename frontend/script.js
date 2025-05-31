@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // API endpoint (update this to your actual API endpoint)
-    const API_URL = 'http://localhost:5000/api';
+    // API endpoint - Render deployment
+    const API_URL = 'https://minutes-ai-o4k9.onrender.com/api';
     
     // DOM elements
     const tabBtns = document.querySelectorAll('.tab-btn');
