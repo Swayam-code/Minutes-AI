@@ -1,0 +1,18 @@
+Product Team Meeting - June 1, 2025
+
+Attendees: John (Product), Sarah (Engineering), Mike (Design), Lisa (Marketing)
+
+Agenda:
+1. Q2 Roadmap Review
+2. Feature Prioritization
+3. User Feedback Discussion
+
+Notes:
+- We reviewed the Q2 roadmap and decided to postpone the analytics dashboard to Q3.
+- The mobile app redesign will be our top priority for the next sprint.
+- User testing showed that 80% of users struggled with the checkout process.
+- Sarah will implement the new payment gateway integration by June 15.
+- Mike to finalize the new UI mockups by end of week.
+- We'll launch the beta version to select customers on June 20.
+- Lisa will prepare the marketing materials for the launch by June 18.
+- Next meeting scheduled for June 8 at 10 AM.

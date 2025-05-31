@@ -1,0 +1,271 @@
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #166088;
+  --accent-color: #4fc3a1;
+  --text-color: #333;
+  --light-gray: #f5f7fa;
+  --border-color: #ddd;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+header p {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+}
+
+.input-section, .output-section, .sample-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.file-upload input {
+  display: none;
+}
+
+.file-upload label {
+  display: block;
+  padding: 30px;
+  border: 2px dashed var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 10px;
+}
+
+.file-upload label:hover {
+  border-color: var(--primary-color);
+}
+
+.file-upload i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  display: block;
+}
+
+#file-name {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+  display: block;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  padding: 30px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid var(--primary-color);
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.results {
+  display: none;
+}
+
+.result-card {
+  background-color: var(--light-gray);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.result-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.result-card h2 i {
+  margin-right: 10px;
+}
+
+.result-card ul {
+  list-style-type: none;
+}
+
+.result-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.result-card li:last-child {
+  border-bottom: none;
+}
+
+.action-item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.action-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.action-item-task {
+  font-weight: bold;
+}
+
+.action-item-owner {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.action-item-due {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+.sample-section h2 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.sample-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sample-btn {
+  background-color: var(--light-gray);
+  border: 1px solid var(--border-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.sample-btn:hover {
+  background-color: var(--border-color);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .sample-buttons {
+    flex-direction: column;
+  }
+  
+  .sample-btn {
+    width: 100%;
+  }
+}

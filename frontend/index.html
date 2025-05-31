@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-clipboard-list"></i> Meeting Minutes Extractor</h1>
+            <p>Powered by Gemini AI</p>
+        </header>
+
+        <div class="input-section">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="text">Text Input</button>
+                <button class="tab-btn" data-tab="file">File Upload</button>
+            </div>
+
+            <div class="tab-content active" id="text-tab">
+                <form id="text-form">
+                    <textarea id="meeting-text" placeholder="Paste your meeting notes here..." rows="10"></textarea>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-robot"></i> Process with AI
+                    </button>
+                </form>
+            </div>
+
+            <div class="tab-content" id="file-tab">
+                <form id="file-form">
+                    <div class="file-upload">
+                        <input type="file" id="meeting-file" accept=".txt">
+                        <label for="meeting-file">
+                            <i class="fas fa-file-upload"></i>
+                            <span>Choose a .txt file</span>
+                        </label>
+                        <div id="file-name">No file selected</div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-robot"></i> Process with AI
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="output-section" id="output-section">
+            <div class="loader" id="loader">
+                <div class="spinner"></div>
+                <p>Processing your meeting notes...</p>
+            </div>
+            
+            <div class="results" id="results">
+                <div class="result-card">
+                    <h2><i class="fas fa-lightbulb"></i> Summary</h2>
+                    <p id="summary-text"></p>
+                </div>
+                
+                <div class="result-card">
+                    <h2><i class="fas fa-check-circle"></i> Key Decisions</h2>
+                    <ul id="decisions-list"></ul>
+                </div>
+                
+                <div class="result-card">
+                    <h2><i class="fas fa-tasks"></i> Action Items</h2>
+                    <div id="action-items"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sample-section">
+            <h2>Try with Sample Data</h2>
+            <div class="sample-buttons">
+                <button id="sample1-btn" class="sample-btn">Sample 1: Product Team Meeting</button>
+                <button id="sample2-btn" class="sample-btn">Sample 2: Weekly Team Sync</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>AI-Powered Meeting Minutes Extractor &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

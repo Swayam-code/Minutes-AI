@@ -1,0 +1,27 @@
+{
+  "name": "minutes-ai",
+  "version": "1.0.0",
+  "description": "AI-powered meeting minutes extractor using MERN stack and Gemini API",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run start:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm run test-api"
+  },
+  "keywords": [
+    "ai",
+    "meeting-minutes",
+    "mern",
+    "gemini",
+    "nlp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
