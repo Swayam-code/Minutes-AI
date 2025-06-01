@@ -13,23 +13,34 @@ const initGeminiAI = () => {
 // Generate prompt for Gemini
 const generatePrompt = (meetingText) => {
   return `
-Extract the following information from these meeting notes:
-1. A 2-3 sentence summary of the meeting
-2. A list of key decisions made
+You are an expert meeting minutes analyzer. Extract the following information from these meeting notes in a concise, professional manner:
+
+1. A concise summary (1-2 sentences only) focusing on key points, decisions, and action items
+2. A list of specific, actionable decisions made (use short, direct phrases starting with action verbs or clear statements)
 3. A list of action items with assigned owners and deadlines (if available)
 
 Meeting Notes:
 ${meetingText}
 
-Format your response as JSON with the following structure:
+Format your response STRICTLY as JSON with the following structure and nothing else:
 {
-  "summary": "...",
-  "decisions": ["...", "..."],
+  "summary": "A brief, direct summary focusing only on key points",
+  "decisions": [
+    "Decision 1 in a short, clear phrase", 
+    "Decision 2 in a short, clear phrase"
+  ],
   "actionItems": [
-    {"task": "...", "owner": "...", "due": "..."},
-    {"task": "...", "owner": "...", "due": "..."}
+    {"task": "Specific task description", "owner": "Name", "due": "Date or null if not specified"},
+    {"task": "Another task description", "owner": "Name", "due": "Date or null if not specified"}
   ]
 }
+
+Guidelines:
+- Keep the summary concise and focused on facts, not interpretations
+- Format decisions as short, clear statements (e.g., "Launch product on June 10" not "The team decided to launch the product on June 10")
+- Extract only explicitly mentioned decisions and action items
+- Use null for missing due dates, don't make them up
+- Don't include any explanatory text outside the JSON structure
 `;
 };
 
