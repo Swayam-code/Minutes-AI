@@ -294,5 +294,5 @@ ISC
 ---
 
 <div align="center">
-  <p>Made with ❤️ by Swayam for more productive meetings</p>
+  <p>Made with ❤️ by Swayam</p>
 </div>
