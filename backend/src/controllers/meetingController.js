@@ -41,6 +41,8 @@ Guidelines:
 - Extract only explicitly mentioned decisions and action items
 - Use null for missing due dates, don't make them up
 - Don't include any explanatory text outside the JSON structure
+- IMPORTANT: Treat feedback or requests from stakeholders (customers, users, etc.) as decisions. For example, if "Beta users requested a mobile-first dashboard", include "Need mobile-first dashboard for beta users" in the decisions list
+- Always include ALL key points mentioned in the notes, even if they seem like minor details
 `;
 };
 
