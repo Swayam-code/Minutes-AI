@@ -39,7 +39,7 @@ Guidelines:
 - Keep the summary concise and focused on facts, not interpretations
 - Format decisions as short, clear statements (e.g., "Launch product on June 10" not "The team decided to launch the product on June 10")
 - Extract only explicitly mentioned decisions and action items
-- Use null for missing due dates, don't make them up
+- Use "NULL" for missing due dates, don't make them up
 - Don't include any explanatory text outside the JSON structure
 - IMPORTANT: Treat feedback or requests from stakeholders (customers, users, etc.) as decisions. For example, if "Beta users requested a mobile-first dashboard", include "Need mobile-first dashboard for beta users" in the decisions list
 - Always include ALL key points mentioned in the notes, even if they seem like minor details
